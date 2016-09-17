@@ -1,0 +1,42 @@
+
+body {
+	padding-top: 60px;
+}
+
+ng-hide {
+	display: none;
+}
+
+.map-canvas { height: 400px; }
+
+.loader {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold;
+	width: 200px;
+	height: 36px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.image-co {
+	float: left;
+	padding: 10px;
+}
+
+.image-co-create {
+	float: left;
+	padding: 10px;	
+	margin-left: 100px;
+}
+
+.size {
+    height:200px;
+    width:600px;
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="cds">
+<head>
+	<title>CDS Desafio</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+	<link href="css/custom.css" rel="stylesheet">
+	<link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css" />
+</head>
+<body>
+
+	<div class="loader" ng-hide="initialized">
+		Loading...
+	</div>
+	<div class="container ng-hide" ng-show="initialized">
+		<div class="alert alert-danger" ng-show="error">{{error}}</div>
+		<div ng-view></div>
+	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-resource.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-route.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-cookies.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+	
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/app/login/loginController.js"></script>
+	<script type="text/javascript" src="js/app/login/loginService.js"></script>
+	<script type="text/javascript" src="./config.route.js"></script>
+	<script type="text/javascript" src="js/app/employee/employeeController.js"></script>
+	<script type="text/javascript" src="js/app/employee/employeeService.js"></script>
+	<script type="text/javascript" src="filters/propsFilter.js"></script>
+	<script src="bower_components/angular-ui-select/dist/select.js"></script>
+	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	
+	<script src="bower_components/angular-ui-map/ui-map.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-ui-event/dist/event.js"></script>
+
+
+	
+</body>
+</html>

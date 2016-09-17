@@ -1,0 +1,14 @@
+/.settings
+/target
+/.classpath
+/.project
+/.idea/
+.DS_Store
+.idea
+.tmp
+node_modules/
+.sass-cache/
+npm-debug.log
+releases/
+bower_components
+projectFilesBackup

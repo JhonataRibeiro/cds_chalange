@@ -1,0 +1,27 @@
+<div class="pull-right">
+	<a href="#!/employee/new" class="btn btn-default" title="Create"><span>Novo</span></a>
+</div>
+<div class="page-header">
+	<h3>Colaboradores</h3>
+</div>
+
+<div>
+	
+  <div class="row">
+    <div class="row">
+        <div ng-repeat="employee in EmployeeCtrl.employees track by $index" class="col-md-6">
+            <div ng-click="EmployeeCtrl.detail(employee)" class="thumbnail">
+                <img src="http://lorempixel.com/200/200" class="img-circle image-co" alt="Cinque Terre" width="100" height="100">
+
+                <h4 ng-click="EmployeeController.detail()">{{employee.name}}</h4>
+                <p>{{employee.office}}</p>
+                <p><i class="fa fa-lightbulb-o"></i>{{employee.sector}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</div>
+<hr />

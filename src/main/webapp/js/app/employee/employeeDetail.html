@@ -1,0 +1,49 @@
+
+<div class="container-fluid bg-light lter b-b wrapper-md ng-scope">
+
+</div>
+
+
+<div>
+    <span class="pull-right" ng-click="EmployeeDetailCtrl.remove(EmployeeDetailCtrl.employee)"><i class="fa fa-times fa-2x"></i></span>
+    <span class="pull-right" ng-click="EmployeeDetailCtrl.edit(EmployeeDetailCtrl.employee)"><i class="fa fa fa-pencil fa-2x"></i></span>
+    <span class="pull-right" ng-click="EmployeeDetailCtrl.back()"><i class="fa fa-arrow-left fa-2x"></i></span>
+</div>
+
+<div class="container-fluid border">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-8">
+                <h1>{{EmployeeDetailCtrl.employee.name}}</h1>
+                <h2>{{EmployeeDetailCtrl.employee.office}}</h2>
+                <p><i class="fa fa-lightbulb-o"></i>{{EmployeeDetailCtrl.employee.sector}}</p>
+            </div>
+        </div>
+
+        </hr>
+
+        <p>{{EmployeeDetailCtrl.employee.biography}}</p>
+
+        </hr>
+
+        <div ng-repeat="skill in EmployeeDetailCtrl.employee.skills">
+            {{skill}}
+        </div>
+
+
+        <p>{{EmployeeDetailCtrl.employee.address}}</p>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
